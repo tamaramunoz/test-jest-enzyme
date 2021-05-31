@@ -2,8 +2,7 @@
 function App() {
   return (
     <div className="App">
-
-      hi everyone 222
+      Welcome to the challenges, you will find all the results inside "challenges" folder in src.
     </div>
   );
 }
