@@ -7,9 +7,6 @@ let joined_array = array_one.concat(array_two)
 
 // Objects
 
-let arr = []
-
 let object_one = { attr: 1, attr_two: 2 }
 let object_two = { attr_three: 3, attr_four: 4 }
-arr.push(object_one)
-arr.push(object_two)
+let joined_object = Object.assign(object_one, object_two)
