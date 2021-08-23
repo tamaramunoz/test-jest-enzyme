@@ -52,3 +52,18 @@ test('clicking button increments counter display', () => {
     const count = findByTestAttr(wrapper, "count").text();
     expect(count).toBe("1");
 });
+
+test('render decrement button', () => {
+    const wrapper = setup();
+    const decrementButton = findByTestAttr(wrapper, "decrement-button");
+    expect(decrementButton.length).toBe(1)
+});
+
+
+// test('clicking button decrements counter display when state is greater than 0', () => {
+//     const wrapper = setup();
+
+//     // find decrement button and click
+//     const decrementButton = findByTestAttr(wrapper, "decrement-button");
+//     decrementButton.simulate('click');
+// });
